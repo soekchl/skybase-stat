@@ -1,0 +1,13 @@
+{
+  "name": "skybase-stat",
+  "version": "1.0.0",
+  "description": "统计模块",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "skybase": "*"
+  }
+}
