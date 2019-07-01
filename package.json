@@ -1,13 +1,29 @@
 {
   "name": "skybase-stat",
-  "version": "1.0.0",
-  "description": "统计模块",
+  "version": "1.0.1",
+  "description": "Api Stat System",
   "main": "index.js",
-  "scripts": {},
-  "author": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soekchl/skybase-stat.git"
+  },
+  "keywords": [
+    "skybase",
+    "stat",
+    "skybase-stat"
+  ],
+  "author": "Luke",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soekchl/skybase-stat/issues"
+  },
+  "homepage": "https://github.com/soekchl/skybase-stat#readme",
   "dependencies": {
     "amqplib": "^0.5.3",
     "skybase": "*"
   }
 }
+
