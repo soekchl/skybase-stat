@@ -75,6 +75,7 @@ http://localhost:13000/skyapi/getSpecialKeys?keyList=["api:_skyapi_getAll"]&coun
   "msg": "成功",
   "t": 1561964915613
 }
+```
 
 
 ### 获取某几个统计
@@ -132,7 +133,7 @@ http://localhost:13000/skyapi/getSpecialKeys?keyList=["api:_skyapi_getAll"]&coun
   "msg": "成功",
   "t": 1561964915613
 }
-
+```
 
 ### 获取单个统计
 
@@ -291,7 +292,7 @@ http://localhost:13000/skyapi/getSpecialKeys?keyList=["api:_skyapi_getAll"]&coun
   "msg": "成功",
   "t": 1561964994648
 }
-
+```
 
 ### 获取指定几个key相应数据
 
@@ -454,4 +455,4 @@ http://localhost:13000/skyapi/getSpecialKeys?keyList=["api:_skyapi_getAll"]&coun
   "msg": "成功",
   "t": 1561964527619
 }
-
+```
