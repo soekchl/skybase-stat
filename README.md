@@ -1,9 +1,32 @@
-# skybase-stat  相关统计接口 
+# skybase-stat  相关API统计系统
 
 ### 安装依赖
 
 ```bash
 $ npm i
+```
+
+### 本地配置设置 - ./config/config.local.js
+```js
+module.exports = {
+    redis: {
+        host: 'localhost',
+        port: 6379,
+        auth: '',
+        db: 1
+    },
+    redisStack: {
+        host: 'localhost',
+        port: 6379,
+        auth: '',
+        db: 2
+    },
+    stackRabbitMQ: { // 可选
+        protocol: 'amqp',
+        host: 'localhost',
+        port: '5672'
+    }
+}
 ```
 
 ### 启动项目
