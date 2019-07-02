@@ -1,6 +1,6 @@
 {
   "name": "skybase-stat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Api Stat System",
   "main": "index.js",
   "scripts": {
