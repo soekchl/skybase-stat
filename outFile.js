@@ -49,7 +49,7 @@ function myConsumer (recvObj) {
 function getBeforeMount() {
   return `
   // 连接redisStack
-  const redisStack = createIoredis(config.redisStack)
+  const redisStack = createRtsIoRedis(config.redisStack)
   await redisStack.waitForConnected()
   global.redisStack = redisStack
   // 启动 rts
@@ -62,14 +62,14 @@ function getBeforeMount() {
   })
 
   // 连接mq
-  // global.rtsMQ = await createRbmq(config.stackRabbitMQ)
+  // global.rtsMQ = await createRtsMq(config.stackRabbitMQ)
 `
 }
 
 function getRequire() {
   return `
-const createIoredis = require('skybase/sky-module/create_ioredis')
-// const createRbmq = require('skybase/sky-module/create_amqplib')
+const createRtsIoRedis = require('skybase/sky-module/create_ioredis')
+// const createRtsMq = require('skybase/sky-module/create_amqplib')
 `
 }
 
