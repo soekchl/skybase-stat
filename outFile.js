@@ -48,11 +48,6 @@ function myConsumer (recvObj) {
 
 function getBeforeMount() {
   return `
-  // 连接redis
-  const redis = createIoredis(config.redis)
-  await redis.waitForConnected()
-  global.redis = redis
-
   // 连接redisStack
   const redisStack = createIoredis(config.redisStack)
   await redisStack.waitForConnected()
@@ -80,12 +75,6 @@ const createIoredis = require('skybase/sky-module/create_ioredis')
 
 function getConfig() {
   return `
-  redis: {
-    host: 'localhost',
-    port: 6379,
-    auth: '',
-    db: 1
-  },
   redisStack: {
     host: 'localhost',
     port: 6379,

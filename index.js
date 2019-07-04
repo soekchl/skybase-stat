@@ -7,11 +7,6 @@ const createRbmq = require('skybase/sky-module/create_amqplib')
 /* global $ */
 
 config.beforeMount = async () => {
-  // 连接redis
-  const redis = createIoredis(config.redis)
-  await redis.waitForConnected()
-  global.redis = redis
-
   // 连接redisStack
   const redisStack = createIoredis(config.redisStack)
   await redisStack.waitForConnected()

@@ -27,13 +27,6 @@ module.exports = {
     host: 'localhost',
     port: '5672'
   },
-  redis: {
-    host: 'localhost',
-    port: 6379,
-    auth: '',
-    db: 1
-  },
-
   rabbitMQ: {
     protocol: 'amqp',
     host: 'localhost',
